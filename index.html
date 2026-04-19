@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Sports Car Care – Ajman, UAE</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      width: 100%;
+      background: linear-gradient(160deg, #111 0%, #1a1a1a 100%);
+      border-bottom: 3px solid gold;
+      padding: 50px 20px 40px;
+      text-align: center;
+    }
+
+    .hero .logo-ring {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 4px solid gold;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      font-size: 36px;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.6rem, 5vw, 2.6rem);
+      color: gold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .hero .tagline {
+      margin-top: 8px;
+      color: #ccc;
+      font-size: 0.95rem;
+      letter-spacing: 1px;
+    }
+
+    .hero .location {
+      margin-top: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,215,0,0.1);
+      border: 1px solid rgba(255,215,0,0.3);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 0.85rem;
+      color: gold;
+    }
+
+    /* ── Services ── */
+    .section {
+      width: 100%;
+      max-width: 680px;
+      padding: 36px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 1.1rem;
+      color: gold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .service-card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      padding: 18px 12px;
+      transition: border-color 0.2s;
+    }
+
+    .service-card:hover { border-color: gold; }
+
+    .service-card .icon { font-size: 1.8rem; margin-bottom: 8px; }
+    .service-card p { font-size: 0.85rem; color: #ccc; }
+
+    /* ── CTA Buttons ── */
+    .cta-section {
+      width: 100%;
+      max-width: 480px;
+      padding: 0 20px 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.15s;
+      letter-spacing: 0.5px;
+    }
+
+    .btn:hover { opacity: 0.88; transform: translateY(-2px); }
+    .btn:active { transform: translateY(0); }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: #fff;
+    }
+
+    .btn-review {
+      background: gold;
+      color: #000;
+    }
+
+    /* ── Footer ── */
+    footer {
+      width: 100%;
+      background: #111;
+      border-top: 1px solid #222;
+      text-align: center;
+      padding: 18px 20px;
+      font-size: 0.75rem;
+      color: #555;
+    }
+
+    /* WhatsApp SVG icon */
+    .wa-icon {
+      width: 22px; height: 22px; fill: #fff; flex-shrink: 0;
+    }
+
+    /* Google star icon */
+    .star-icon { font-size: 1.2rem; }
+
+    @media (max-width: 380px) {
+      .services-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="logo-ring">🚗</div>
+    <h1>Auto Sports<br>Car Care</h1>
+    <p class="tagline">Premium Vehicle Care &amp; Detailing</p>
+    <span class="location">📍 Ajman, UAE</span>
+  </div>
+
+  <!-- Services -->
+  <div class="section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon">✨</div>
+        <p>Full Car Wash &amp; Detailing</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🔧</div>
+        <p>Engine &amp; Underbody Clean</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">💎</div>
+        <p>Interior Deep Clean</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🛡️</div>
+        <p>Paint Protection &amp; Polish</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <a class="btn btn-whatsapp" href="https://wa.me/971563867796" target="_blank" rel="noopener">
+      <svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      WhatsApp Us Now
+    </a>
+
+    <a class="btn btn-review" href="https://g.page/r/CemF_MHMuVYjEAE/review" target="_blank" rel="noopener">
+      <span class="star-icon">⭐</span>
+      Leave a Google Review
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2026 Auto Sports Car Care &mdash; Ajman, UAE. All rights reserved.
+  </footer>
+
+</body>
+</html>
